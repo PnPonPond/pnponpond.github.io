@@ -4,7 +4,6 @@ import styled, { keyframes } from "styled-components";
 
 const Container = styled.div`
   position: relative;
-  background-color: pink;
   min-height: 100vh;
   margin-top: ${(props) => (props.inView ? "-8vh" : "0")};
   display: flex;

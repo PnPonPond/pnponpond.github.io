@@ -66,7 +66,7 @@ function Navbar({ inView }) {
           Home
         </MenuLink>
         <MenuLink inputColor="#f49d37" href="#">
-          Profile
+          About
         </MenuLink>
         <MenuLink inputColor="#3f88c5" href="#">
           Project

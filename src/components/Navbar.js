@@ -25,7 +25,7 @@ const MenuLink = styled.a`
   text-decoration: none;
   cursor: pointer;
   color: ${(props) => (props.inputColor ? props.inputColor : "black")};
-  transition: text-decoration 1s ease-in-out;
+  transition: text-decoration 0.5s ease-in-out;
   font-weight: 700;
   &::after {
     margin-top: 2px;

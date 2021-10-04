@@ -38,7 +38,7 @@ function Credit() {
       <div />
       <Icons>
         <IconLink
-          to="/"
+          href="https://github.com/PnPonPond/"
           inputColor="#eb1d1d"
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.8 }}
@@ -46,7 +46,7 @@ function Credit() {
           <FaGithub size="2.5em" />
         </IconLink>
         <IconLink
-          to="/"
+          href="https://www.linkedin.com/in/chanyanuch-oranthavornkul-6a6a74176/"
           inputColor="#f49d37"
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.8 }}
@@ -54,7 +54,7 @@ function Credit() {
           <FaLinkedin size="2.5em" />
         </IconLink>
         <IconLink
-          to="/"
+          href="https://www.facebook.com/PonP0nd/"
           inputColor="#3f88c5"
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.8 }}

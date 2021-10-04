@@ -11,9 +11,10 @@ const Container = styled.div`
   align-items: center;
   flex-direction: column;
   background-image: url("/img/Bg1.jpg");
+  background-attachment: fixed;
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
 `;
 
 const Backdrop = styled.div`
@@ -29,7 +30,7 @@ const move = keyframes`
   0% {background-position: 100% -100%}
 `;
 
-const Title = styled(motion.h1)`
+const Title = styled.h1`
   position: relative;
   font-size: 8em;
   line-height: 1;
@@ -59,26 +60,26 @@ const Title = styled(motion.h1)`
   }
 `;
 
+const TextSection = styled(motion.div)`
+  display: flex;
+  z-index: 2;
+  align-items: center;
+  flex-direction: column;
+`;
+
 const HeroSection = React.forwardRef(({ inView }, ref) => {
   return (
     <Container ref={ref} inView={inView}>
       <Backdrop />
-      <Title
-        data-shadow="Chanyanuch"
+      <TextSection
+        inView={inView}
         initial={{ y: "-90%", opacity: 0 }}
         animate={{ y: "0", opacity: 1 }}
         transition={{ type: "easeIn", duration: 0.75 }}
       >
-        Chanyanuch
-      </Title>
-      <Title
-        data-shadow="Oranthavornkul"
-        initial={{ y: "-90%", opacity: 0 }}
-        animate={{ y: "0", opacity: 1 }}
-        transition={{ type: "easeIn", duration: 0.75 }}
-      >
-        Oranthavornkul
-      </Title>
+        <Title data-shadow="Chanyanuch">Chanyanuch</Title>
+        <Title data-shadow="Oranthavornkul">Oranthavornkul</Title>
+      </TextSection>
     </Container>
   );
 });

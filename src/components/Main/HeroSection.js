@@ -67,7 +67,7 @@ const HeroSection = React.forwardRef(({ inView }, ref) => {
         data-shadow="Chanyanuch"
         initial={{ y: "-90%" }}
         animate={{ y: "0" }}
-        transition={{ type: "spring", duration: 5, bounce: 0.6 }}
+        transition={{ type: "easeIn", duration: 0.75, bounce: 0.6 }}
       >
         Chanyanuch
       </Title>
@@ -75,7 +75,7 @@ const HeroSection = React.forwardRef(({ inView }, ref) => {
         data-shadow="Oranthavornkul"
         initial={{ y: "-90%" }}
         animate={{ y: "0" }}
-        transition={{ type: "spring", duration: 5, bounce: 0.6 }}
+        transition={{ type: "easeIn", duration: 0.75, bounce: 0.6 }}
       >
         Oranthavornkul
       </Title>

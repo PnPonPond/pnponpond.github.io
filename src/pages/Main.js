@@ -19,7 +19,7 @@ function Main() {
   });
   console.log(inView);
   return (
-    <Container>
+    <Container id="home">
       <NavbarTop />
       <Navbar inView={inView} />
       <HeroSection ref={ref} inView={inView} />

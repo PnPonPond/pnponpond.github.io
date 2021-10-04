@@ -15,7 +15,7 @@ const Container = styled.div`
 `;
 
 function Profile() {
-  return <Container></Container>;
+  return <Container id="about">about me</Container>;
 }
 
 export default Profile;

@@ -7,6 +7,9 @@ const Container = styled.div`
   position: relative;
   padding: 4rem 8rem;
   background-color: #f4f3ee;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 `;
 
 const Title = styled(motion.h1)`
@@ -37,8 +40,8 @@ const CardItems = styled(motion.a)`
 const Overlay = styled(motion.div)`
   position: absolute;
   width: 100%;
-  padding: 20px;
-  background-color: black;
+  height: 100%;
+  background-color: #000000bc;
   color: white;
   display: flex;
   justify-content: center;
@@ -52,10 +55,37 @@ const Img = styled(motion.img)`
   left: 0;
 `;
 
+const ProjectContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  padding: 20px 70px;
+  flex-direction: column;
+`;
+
+const ProjectName = styled.h2`
+  position: relative;
+  font-weight: 700;
+  z-index: 2;
+`;
+
+const colors = ["#eb1d1d", "#f49d37", "#3f88c5"];
+
+const Line = styled(motion.div)`
+  position: relative;
+  height: 10px;
+  margin-bottom: 20px;
+  margin-left: -8px;
+  margin-top: -15px;
+  background-color: ${(props) =>
+    props.index ? colors[props.index] : "#eb1d1d"};
+  opacity: 0.9;
+  z-index: 1;
+`;
+
 const TitleAnimation = {
   rest: {
     opacity: 0,
-    y: "100%",
+    y: "-100%",
     transition: {
       duration: 0.4,
       ease: "easeInOut",
@@ -88,12 +118,58 @@ const ImgAnimation = {
   },
 };
 
+const LineAnimation = {
+  rest: {
+    width: 0,
+    transition: {
+      duration: 0.4,
+      ease: "easeInOut",
+      delay: 0.25,
+    },
+  },
+  hover: {
+    width: "60%",
+    transition: {
+      duration: 0.4,
+      ease: "easeInOut",
+      delay: 0.25,
+    },
+  },
+};
+
+const Button = styled.a`
+  margin-top: 40px;
+  align-self: center;
+  width: 200px;
+  background-color: transparent;
+  border-radius: 12px;
+  box-sizing: border-box;
+  color: #3f88c5;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: Kanit, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  justify-content: center;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  box-shadow: #3f88c5 0 0 0 3px, transparent 0 0 0 0;
+
+  :hover {
+    box-shadow: black 0 0 0 3px, transparent 0 0 0 0;
+    background-color: black;
+    color: white;
+  }
+`;
+
 function Project() {
   return (
-    <Container>
+    <Container id="project">
       <Title>Projects</Title>
       <CardWrapper>
-        {projects.map((project) => {
+        {projects.map((project, i) => {
           return (
             <CardItems
               initial="rest"
@@ -107,11 +183,20 @@ function Project() {
                 alt={`${project.name}-img`}
                 variants={ImgAnimation}
               />
-              <Overlay variants={TitleAnimation}>{project.name}</Overlay>
+              <Overlay variants={TitleAnimation}>
+                <ProjectContainer>
+                  <ProjectName>{project.name}</ProjectName>
+                  <Line variants={LineAnimation} index={i % 3} />
+                  {project.desc}
+                </ProjectContainer>
+              </Overlay>
             </CardItems>
           );
         })}
       </CardWrapper>
+      <Button href="https://github.com/PnPonPond/" target="_blank">
+        Show me more
+      </Button>
     </Container>
   );
 }

@@ -47,13 +47,13 @@ function NavbarTop() {
   return (
     <Nav>
       <Menu>
-        <MenuLink inputColor="#eb1d1d" href="#">
+        <MenuLink inputColor="#eb1d1d" href="#home">
           Home
         </MenuLink>
-        <MenuLink inputColor="#f49d37" href="#">
+        <MenuLink inputColor="#f49d37" href="#about">
           About
         </MenuLink>
-        <MenuLink inputColor="#3f88c5" href="#">
+        <MenuLink inputColor="#3f88c5" href="#project">
           Project
         </MenuLink>
       </Menu>

@@ -5,20 +5,19 @@ import { projects } from "./Projects";
 
 const Container = styled.div`
   position: relative;
-  /* min-height: 110vh; */
-  background-color: #f2f2f2;
+  padding: 4rem 8rem;
+  background-color: #f4f3ee;
 `;
 
 const Title = styled(motion.h1)`
-  color: white;
-  padding-top: 50px;
+  color: #3f88c5;
   text-align: left;
+  margin-bottom: 2rem;
 `;
 
-const CardWarpper = styled.div`
+const CardWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  padding: 50px 10%;
   grid-gap: 2rem;
 `;
 
@@ -31,22 +30,26 @@ const CardItems = styled(motion.a)`
   position: relative;
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
-  background-image: url("/img/Bg1.jpg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
   cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 `;
 
 const Overlay = styled(motion.div)`
+  position: absolute;
   width: 100%;
-  height: 20%;
+  padding: 20px;
   background-color: black;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+
+const Img = styled(motion.img)`
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 `;
 
 const TitleAnimation = {
@@ -68,15 +71,47 @@ const TitleAnimation = {
   },
 };
 
+const ImgAnimation = {
+  rest: {
+    scale: 1,
+    transition: {
+      duration: 0.4,
+      ease: "easeInOut",
+    },
+  },
+  hover: {
+    scale: 1.1,
+    transition: {
+      duration: 0.4,
+      ease: "easeInOut",
+    },
+  },
+};
+
 function Project() {
   return (
     <Container>
       <Title>Projects</Title>
-      <CardWarpper>
-        <CardItems initial="rest" whileHover="hover" animate="rest" >
-          <Overlay variants={TitleAnimation}>AAA</Overlay>
-        </CardItems>
-      </CardWarpper>
+      <CardWrapper>
+        {projects.map((project) => {
+          return (
+            <CardItems
+              initial="rest"
+              whileHover="hover"
+              animate="rest"
+              href={project.url}
+              target="_blank"
+            >
+              <Img
+                src={project.imageUrl}
+                alt={`${project.name}-img`}
+                variants={ImgAnimation}
+              />
+              <Overlay variants={TitleAnimation}>{project.name}</Overlay>
+            </CardItems>
+          );
+        })}
+      </CardWrapper>
     </Container>
   );
 }

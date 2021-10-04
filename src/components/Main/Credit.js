@@ -39,6 +39,7 @@ function Credit() {
       <Icons>
         <IconLink
           href="https://github.com/PnPonPond/"
+          target="_blank"
           inputColor="#eb1d1d"
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.8 }}
@@ -47,6 +48,7 @@ function Credit() {
         </IconLink>
         <IconLink
           href="https://www.linkedin.com/in/chanyanuch-oranthavornkul-6a6a74176/"
+          target="_blank"
           inputColor="#f49d37"
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.8 }}
@@ -55,6 +57,7 @@ function Credit() {
         </IconLink>
         <IconLink
           href="https://www.facebook.com/PonP0nd/"
+          target="_blank"
           inputColor="#3f88c5"
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.8 }}

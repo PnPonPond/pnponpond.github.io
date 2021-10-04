@@ -65,17 +65,17 @@ const HeroSection = React.forwardRef(({ inView }, ref) => {
       <Backdrop />
       <Title
         data-shadow="Chanyanuch"
-        initial={{ y: "-90%" }}
-        animate={{ y: "0" }}
-        transition={{ type: "easeIn", duration: 0.75, bounce: 0.6 }}
+        initial={{ y: "-90%", opacity: 0 }}
+        animate={{ y: "0", opacity: 1 }}
+        transition={{ type: "easeIn", duration: 0.75 }}
       >
         Chanyanuch
       </Title>
       <Title
         data-shadow="Oranthavornkul"
-        initial={{ y: "-90%" }}
-        animate={{ y: "0" }}
-        transition={{ type: "easeIn", duration: 0.75, bounce: 0.6 }}
+        initial={{ y: "-90%", opacity: 0 }}
+        animate={{ y: "0", opacity: 1 }}
+        transition={{ type: "easeIn", duration: 0.75 }}
       >
         Oranthavornkul
       </Title>

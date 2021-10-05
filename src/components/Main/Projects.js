@@ -1,11 +1,5 @@
 export const projects = [
   {
-    name: "Fylo dark theme landing page",
-    url: "https://fylo-dark-theme-landing-page-brown.vercel.app/",
-    imageUrl: "/img/Fylo.png",
-    desc: "Fylo dark theme landing page practice by Frontend Mentor. Fully responsive using CSS flexbox.",
-  },
-  {
     name: "Clipboard landing page",
     url: "https://clipboard-landing-page-mauve.vercel.app/",
     imageUrl: "/img/Clipboard.png",
@@ -16,6 +10,12 @@ export const projects = [
     url: "https://social-proof-section-virid.vercel.app/",
     imageUrl: "/img/Social.png",
     desc: "Frontend Mentor layout skills challenge which using CSS flexbox.",
+  },
+  {
+    name: "Fylo dark theme landing page",
+    url: "https://fylo-dark-theme-landing-page-brown.vercel.app/",
+    imageUrl: "/img/Fylo.png",
+    desc: "Fylo dark theme landing page practice by Frontend Mentor. Fully responsive using CSS flexbox.",
   },
   {
     name: "Four card feature section",

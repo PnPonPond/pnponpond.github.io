@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { Link } from "react-scroll";
 
 const Nav = styled(motion.nav)`
   width: 100%;
@@ -20,7 +21,7 @@ const Menu = styled.div`
   padding: 0 2rem;
 `;
 
-const MenuLink = styled.a`
+const MenuLink = styled(Link)`
   padding: 1rem 2rem;
   text-decoration: none;
   cursor: pointer;
@@ -62,13 +63,13 @@ function Navbar({ inView }) {
       variants={navbarAnimatiom}
     >
       <Menu>
-        <MenuLink inputColor="#eb1d1d" href="#home">
+        <MenuLink inputColor="#eb1d1d" to="home" smooth={true}>
           Home
         </MenuLink>
-        <MenuLink inputColor="#f49d37" href="#about">
+        <MenuLink inputColor="#f49d37" to="about" smooth={true}>
           About
         </MenuLink>
-        <MenuLink inputColor="#3f88c5" href="#project">
+        <MenuLink inputColor="#3f88c5" to="project" smooth={true}>
           Project
         </MenuLink>
       </Menu>

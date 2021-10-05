@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 
 const Nav = styled(motion.nav)`
-  width: 100%;
+  padding: 0 2rem;
+  width: 100vw;
   margin-top: -8vh;
   background-color: ${(props) => (props.inView ? "transparent" : "black")};
   position: ${(props) => (props.inView ? "none" : "fixed")};
@@ -21,7 +22,6 @@ const Menu = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2rem;
 `;
 
 const MenuLink = styled(Link)`

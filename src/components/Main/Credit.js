@@ -6,10 +6,11 @@ import { FaFacebook } from "@react-icons/all-files/fa/FaFacebook";
 import { motion } from "framer-motion";
 
 const Container = styled.div`
+  max-width: 100vw;
   position: relative;
   min-height: 20vh;
   display: flex;
-  padding: 0 50px;
+  padding: 0 10%;
   justify-content: space-between;
   @media (max-width: 425px) {
     flex-direction: column;
@@ -17,9 +18,6 @@ const Container = styled.div`
   }
   align-items: center;
   background-color: #a8acb1;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 `;
 
 const Icons = styled.div`

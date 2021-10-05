@@ -5,7 +5,7 @@ import { projects } from "./Projects";
 
 const Container = styled.div`
   position: relative;
-  padding: 4rem 8rem;
+  padding: 4rem 10%;
   @media (max-width: 768px) {
     padding: 1rem 10%;
   }

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Main from "./pages/Main";
 
 const GlobalStyle = createGlobalStyle`
+  html, body { overflow-x: hidden }
   * {
     margin: 0;
     padding: 0;

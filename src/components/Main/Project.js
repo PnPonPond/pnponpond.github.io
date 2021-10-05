@@ -6,6 +6,9 @@ import { projects } from "./Projects";
 const Container = styled.div`
   position: relative;
   padding: 4rem 8rem;
+  @media (max-width: 768px) {
+    padding: 1rem 10%;
+  }
   background-color: #f4f3ee;
   display: flex;
   justify-content: center;
@@ -15,18 +18,25 @@ const Container = styled.div`
 const Title = styled(motion.h1)`
   color: #3f88c5;
   text-align: left;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 `;
 
 const CardWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-gap: 2rem;
+  @media (max-width: 425px) {
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    grid-gap: 1rem;
+  }
 `;
 
 const CardItems = styled(motion.a)`
   background-color: white;
   height: 300px;
+  @media (max-width: 640px) {
+    height: 206.25px;
+  }
   display: flex;
   flex-direction: column;
   justify-content: flex-end;

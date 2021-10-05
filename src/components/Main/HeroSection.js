@@ -4,6 +4,7 @@ import styled, { keyframes } from "styled-components";
 
 const Container = styled.div`
   position: relative;
+  width: 100vw;
   min-height: 100vh;
   margin-top: ${(props) => (props.inView ? "-8vh" : "0")};
   display: flex;
@@ -32,7 +33,13 @@ const move = keyframes`
 
 const Title = styled.h1`
   position: relative;
-  font-size: 8em;
+  font-size: 3em;
+  @media (min-width: 768px) {
+    font-size: 5.5em;
+  }
+  @media (min-width: 1024px) {
+    font-size: 8em;
+  }
   line-height: 1;
   margin-top: 0.2rem;
   text-transform: capitalize;

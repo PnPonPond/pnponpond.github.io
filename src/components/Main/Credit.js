@@ -11,6 +11,10 @@ const Container = styled.div`
   display: flex;
   padding: 0 50px;
   justify-content: space-between;
+  @media (max-width: 425px) {
+    flex-direction: column;
+    justify-content: center;
+  }
   align-items: center;
   background-color: #a8acb1;
   background-size: cover;

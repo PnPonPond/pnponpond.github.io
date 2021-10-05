@@ -8,6 +8,9 @@ const Nav = styled(motion.nav)`
   min-height: 8vh;
   display: flex;
   justify-content: flex-end;
+  @media (max-width: 425px) {
+    justify-content: center;
+  }
   align-items: center;
   background-color: transparent;
   position: relative;

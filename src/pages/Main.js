@@ -9,6 +9,7 @@ import Profile from "../components/Main/Profile";
 import Project from "../components/Main/Project";
 
 const Container = styled.div`
+  width: 100vw;
   position: relative;
 `;
 
@@ -20,7 +21,6 @@ function Main() {
   console.log(inView);
   return (
     <Container id="home">
-      
       <NavbarTop />
       <Navbar inView={inView} />
       <HeroSection ref={ref} inView={inView} />

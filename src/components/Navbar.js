@@ -10,6 +10,9 @@ const Nav = styled(motion.nav)`
   position: ${(props) => (props.inView ? "none" : "fixed")};
   display: ${(props) => (props.inView ? "none" : "flex")};
   justify-content: flex-end;
+  @media (max-width: 425px) {
+    justify-content: center;
+  }
   align-items: center;
   z-index: 999;
 `;

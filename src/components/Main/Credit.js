@@ -8,12 +8,11 @@ import { motion } from "framer-motion";
 const Container = styled.div`
   max-width: 100vw;
   position: relative;
-  min-height: 20vh;
   display: flex;
   padding: 0 10%;
   justify-content: space-between;
   @media (max-width: 425px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
   }
   align-items: center;
@@ -23,6 +22,9 @@ const Container = styled.div`
 const Icons = styled.div`
   display: flex;
   justify-content: space-between;
+  @media (max-width: 425px) {
+    margin-top: 20px;
+  }
 `;
 
 const IconLink = styled(motion.a)`
@@ -35,7 +37,10 @@ const IconLink = styled(motion.a)`
 `;
 
 const Box = styled.div`
-  padding: 5% 0;
+  padding: 2% 0;
+  @media (max-width: 425px) {
+    text-align: center;
+  }
 `;
 
 const List = styled.ul`
@@ -44,6 +49,9 @@ const List = styled.ul`
 
 const Li = styled.li`
   font-size: 10px;
+  @media (max-width: 425px) {
+    text-align: center;
+  }
 `;
 
 const Link = styled.a``;

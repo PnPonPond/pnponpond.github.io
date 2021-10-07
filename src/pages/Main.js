@@ -7,6 +7,7 @@ import NavbarTop from "../components/NavbarTop";
 import Credit from "../components/Main/Credit";
 import Profile from "../components/Main/Profile";
 import Project from "../components/Main/Project";
+import MountainView from "../components/Main/MountainView";
 
 const Container = styled.div`
   width: 100vw;
@@ -23,6 +24,7 @@ function Main() {
       <NavbarTop />
       <Navbar inView={inView} />
       <HeroSection ref={ref} inView={inView} />
+      <MountainView />
       <Profile />
       <Project />
       <Credit />

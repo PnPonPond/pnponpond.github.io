@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/pnponpond.github.io/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/pnponpond.github.io/static/js/main.66f6b196.chunk.js",
+    "main.js.map": "/pnponpond.github.io/static/js/main.66f6b196.chunk.js.map",
+    "runtime-main.js": "/pnponpond.github.io/static/js/runtime-main.87ede727.js",
+    "runtime-main.js.map": "/pnponpond.github.io/static/js/runtime-main.87ede727.js.map",
+    "static/js/2.ccc973c5.chunk.js": "/pnponpond.github.io/static/js/2.ccc973c5.chunk.js",
+    "static/js/2.ccc973c5.chunk.js.map": "/pnponpond.github.io/static/js/2.ccc973c5.chunk.js.map",
+    "static/js/3.733ce76b.chunk.js": "/pnponpond.github.io/static/js/3.733ce76b.chunk.js",
+    "static/js/3.733ce76b.chunk.js.map": "/pnponpond.github.io/static/js/3.733ce76b.chunk.js.map",
+    "index.html": "/pnponpond.github.io/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/pnponpond.github.io/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.ccc973c5.chunk.js.LICENSE.txt": "/pnponpond.github.io/static/js/2.ccc973c5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.87ede727.js",
+    "static/js/2.ccc973c5.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.66f6b196.chunk.js"
+  ]
+}

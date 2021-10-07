@@ -5,9 +5,9 @@ import { projects } from "./Projects";
 
 const Container = styled.div`
   position: relative;
-  padding: 4rem 10%;
+  padding: 2rem 10% 4rem 10%;
   @media (max-width: 768px) {
-    padding: 1rem 10%;
+    padding: 2rem 10%;
   }
   background-color: #f4f3ee;
   display: flex;
@@ -18,7 +18,7 @@ const Container = styled.div`
 const Title = styled(motion.h1)`
   color: #3f88c5;
   text-align: left;
-  margin: 2rem 0;
+  margin-bottom: 1rem;
 `;
 
 const CardWrapper = styled.div`
@@ -177,7 +177,7 @@ const Button = styled.a`
 
 function Project() {
   return (
-    <Container id="project">
+    <Container>
       <Title>Projects</Title>
       <CardWrapper>
         {projects.map((project, i) => {

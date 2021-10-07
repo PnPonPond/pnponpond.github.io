@@ -24,8 +24,8 @@ function Main() {
       <NavbarTop />
       <Navbar inView={inView} />
       <HeroSection ref={ref} inView={inView} />
-      <MountainView />
       <Profile />
+      <MountainView />
       <Project />
       <Credit />
     </Container>

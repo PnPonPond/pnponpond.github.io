@@ -5,7 +5,7 @@ import styled from "styled-components";
 const Container = styled.div`
   position: relative;
   background-color: #f4f3ee;
-  padding: 5% 10% 0 10%;
+  padding: 0 10%;
 `;
 
 const ImgForeground = styled(motion.img)`
@@ -56,7 +56,7 @@ function MountainView() {
   const x2 = useTransform(scrollY, [top - 400, top + 300], [0, -200]);
   const x3 = useTransform(scrollY, [top - 400, top + 300], [0, -250]);
   return (
-    <Container ref={setRef} id="about">
+    <Container ref={setRef} id="project">
       <Frame>
         <ImgMountain src="/img/mountain.png" alt="" style={{ x: x1 }} />
         <ImgTrees src="/img/trees.png" alt="" style={{ x: x2 }} />

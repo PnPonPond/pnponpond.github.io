@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
   }
-  h1,h2,h3,h4,h5,h6,nav{
+  h1,h2,h3,h4,h5,h6,nav,p,span{
     font-family: 'Kanit', sans-serif;
   }
 `;

@@ -34,10 +34,63 @@ const IconLink = styled(motion.a)`
   }
 `;
 
+const Box = styled.div`
+  padding: 5% 0;
+`;
+
+const List = styled.ul`
+  list-style-type: none;
+`;
+
+const Li = styled.li`
+  font-size: 10px;
+`;
+
+const Link = styled.a``;
+
 function Credit() {
   return (
     <Container>
-      <div />
+      <Box>
+        <h5>My resource</h5>
+        <List>
+          <Li>
+            Animate text shadow -{" "}
+            <Link href="https://codepen.io/carpenumidium" target="_blank">
+              @carpenumidium
+            </Link>
+          </Li>
+          <Li>
+            Lego background -{" "}
+            <Link href="https://unsplash.com/@omaralbeik" target="_blank">
+              @omaralbeik
+            </Link>
+          </Li>
+          <Li>
+            Icon made by{" "}
+            <Link
+              href="https://www.flaticon.com/authors/freepik"
+              title="Freepik"
+            >
+              Freepik
+            </Link>{" "}
+            from{" "}
+            <Link href="https://www.flaticon.com/" title="Flaticon">
+              www.flaticon.com
+            </Link>
+          </Li>
+          <Li>
+            Mountain Dusk Parallax background -{" "}
+            <Link
+              href="https://ansimuz.itch.io/mountain-dusk-parallax-background"
+              target="_blank"
+            >
+              @ansimuz
+            </Link>
+          </Li>
+        </List>
+      </Box>
+
       <Icons>
         <IconLink
           href="https://github.com/PnPonPond/"

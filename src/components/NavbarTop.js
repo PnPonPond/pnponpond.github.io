@@ -14,7 +14,7 @@ const Nav = styled(motion.nav)`
   }
   align-items: center;
   background-color: transparent;
-  position: relative;
+  position: absolute;
   z-index: 1000;
 `;
 
@@ -28,7 +28,7 @@ const MenuLink = styled(Link)`
   padding: 1rem 2rem;
   text-decoration: none;
   cursor: pointer;
-  color: ${(props) => (props.inputColor ? props.inputColor : "black")};
+  color: ${(props) => (props.inputcolor ? props.inputcolor : "black")};
   transition: text-decoration 1s ease-in-out;
   font-weight: 700;
   &::after {
@@ -37,7 +37,7 @@ const MenuLink = styled(Link)`
     height: 2px;
     width: 0;
     background-color: ${(props) =>
-      props.inputColor ? props.inputColor : "black"};
+      props.inputcolor ? props.inputcolor : "black"};
     display: block;
     transition: width 0.5s ease-in-out;
   }
@@ -51,13 +51,13 @@ function NavbarTop() {
   return (
     <Nav>
       <Menu>
-        <MenuLink inputColor="#eb1d1d" to="home" smooth={true}>
+        <MenuLink inputcolor="#eb1d1d" to="home" smooth={true}>
           Home
         </MenuLink>
-        <MenuLink inputColor="#f49d37" to="about" smooth={true}>
+        <MenuLink inputcolor="#f49d37" to="about" smooth={true}>
           About
         </MenuLink>
-        <MenuLink inputColor="#3f88c5" to="project" smooth={true}>
+        <MenuLink inputcolor="#3f88c5" to="project" smooth={true}>
           Project
         </MenuLink>
       </Menu>

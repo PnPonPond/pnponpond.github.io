@@ -4,9 +4,10 @@ import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 
 const Nav = styled(motion.nav)`
+  top: 0;
+  left: 0;
   padding: 0 2rem;
   width: 100vw;
-  margin-top: -8vh;
   background-color: ${(props) => (props.inView ? "transparent" : "black")};
   position: ${(props) => (props.inView ? "none" : "fixed")};
   display: ${(props) => (props.inView ? "none" : "flex")};
@@ -28,7 +29,7 @@ const MenuLink = styled(Link)`
   padding: 1rem 2rem;
   text-decoration: none;
   cursor: pointer;
-  color: ${(props) => (props.inputColor ? props.inputColor : "black")};
+  color: ${(props) => (props.inputcolor ? props.inputcolor : "black")};
   transition: text-decoration 0.5s ease-in-out;
   font-weight: 700;
   &::after {
@@ -37,7 +38,7 @@ const MenuLink = styled(Link)`
     height: 2px;
     width: 0;
     background-color: ${(props) =>
-      props.inputColor ? props.inputColor : "black"};
+      props.inputcolor ? props.inputcolor : "black"};
     display: block;
     transition: width 0.5s ease-in-out;
   }
@@ -50,9 +51,17 @@ const MenuLink = styled(Link)`
 const navbarAnimatiom = {
   down: {
     y: "-100%",
+    transition: {
+      duration: 0.4,
+      ease: "easeInOut",
+    },
   },
   show: {
     y: 0,
+    transition: {
+      duration: 0.4,
+      ease: "easeInOut",
+    },
   },
   init: {},
 };
@@ -66,13 +75,13 @@ function Navbar({ inView }) {
       variants={navbarAnimatiom}
     >
       <Menu>
-        <MenuLink inputColor="#eb1d1d" to="home" smooth={true}>
+        <MenuLink inputcolor="#eb1d1d" to="home" smooth={true}>
           Home
         </MenuLink>
-        <MenuLink inputColor="#f49d37" to="about" smooth={true}>
+        <MenuLink inputcolor="#f49d37" to="about" smooth={true}>
           About
         </MenuLink>
-        <MenuLink inputColor="#3f88c5" to="project" smooth={true}>
+        <MenuLink inputcolor="#3f88c5" to="project" smooth={true}>
           Project
         </MenuLink>
       </Menu>

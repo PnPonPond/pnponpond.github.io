@@ -18,7 +18,6 @@ function Main() {
     /* Optional options */
     threshold: 0,
   });
-  console.log(inView);
   return (
     <Container id="home">
       <NavbarTop />

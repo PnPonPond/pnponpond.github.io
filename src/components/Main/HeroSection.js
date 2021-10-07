@@ -6,7 +6,6 @@ const Container = styled.div`
   position: relative;
   width: 100vw;
   min-height: 100vh;
-  margin-top: ${(props) => (props.inView ? "-8vh" : "0")};
   display: flex;
   justify-content: center;
   align-items: center;

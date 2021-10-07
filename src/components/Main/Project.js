@@ -183,6 +183,7 @@ function Project() {
         {projects.map((project, i) => {
           return (
             <CardItems
+              key={i}
               initial="rest"
               whileHover="hover"
               animate="rest"

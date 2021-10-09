@@ -29,4 +29,10 @@ export const projects = [
     imageUrl: "/img/Post-it.png",
     desc: "KU Post-it is a platform for teacher, students, and company to find work, using Typescript React with Material-UI. This is a Software Engineering course project. Responsible as frontend developer and UX/UI designer.",
   },
+  {
+    name: "Todo app",
+    url: "https://todo-app-blush-one.vercel.app/",
+    imageUrl: "/img/Todo.png",
+    desc: "The classic todo app with a dark/light theme toggle challenge from Frontend Mentor, using ReactJs and styled-component",
+  },
 ];
